@@ -1,0 +1,45 @@
+img{
+
+    height: 100%;
+    width: 100%;
+}
+.carousel-container{
+    height: 300px;
+    width: 450px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.carousel-slide{
+    display: flex;
+    transition: transform 0.3s;
+}
+
+.prev-button,
+.next-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.prev-button{
+    left: 0;
+}
+
+.next-button{
+    right: 0;
+}
+
+.carousel-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+}
